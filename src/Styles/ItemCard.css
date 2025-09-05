@@ -1,0 +1,132 @@
+.item-card{
+    width: 100%;
+    min-width: 200px;
+    max-width: 350px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #353535;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+}
+.item-card .image-section{
+    background-color: #353535;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    padding: 30px 60px;
+    cursor: pointer;
+}
+.item-card .image-section .product-action-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    column-gap: 5px;
+}
+.item-card .image-section img{
+    width: 100%;
+}
+.item-card .image-section .product-action-buttons button{
+    background-color: rgba(25,25,25,.6);
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    cursor: pointer;
+    padding: 10px;
+}
+.item-card .image-section .product-action-buttons button#addToFavourites{
+    border-radius: 50%;
+}
+.item-card .image-section .product-action-buttons button#compareTo{
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+.item-card .image-section .product-action-buttons button svg,
+.item-card .image-section .product-action-buttons button p{
+    transition: all 0.1s ease-in-out;
+}
+.item-card .image-section .product-action-buttons button:hover svg,
+.item-card .image-section .product-action-buttons button:hover p{
+    filter: invert(58%) sepia(50%) saturate(749%) hue-rotate(123deg) brightness(92%) contrast(90%);
+
+}
+.item-card h2{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.item-card .rating-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.item-card .rating-section .rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#12daa8;
+    gap: 5px;
+}
+.item-card .rating-section .rating svg{
+    width: 15px;
+}
+.item-card .rating-section .ratingCount{
+    position: relative;
+}
+.item-card .rating-section .ratingCount::before,
+.item-card .rating-section .ratingCount::after{
+    position: relative;
+    width: 1em;
+    height: auto;
+}
+.item-card .rating-section .ratingCount::before{
+    content: '(';
+}
+.item-card .rating-section .ratingCount::after{
+    content:')';
+}
+.item-card .price-section{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
+.item-card .price-section p.currentPrice{
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.item-card .price-section p.actualPrice{
+    text-decoration:line-through;
+    font-weight: 400;    
+    font-size: 1.1em;
+}
+.item-card .price-section .savings{
+    font-size: 10px;
+    color: #918f8f;
+}
+.item-card .price-section .discount{
+    border: 1px solid #585757;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 0.8em;
+    font-weight: 800;
+}
+.item-card .delivery-section{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 10px;
+}
